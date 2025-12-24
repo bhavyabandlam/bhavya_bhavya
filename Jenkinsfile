@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: '',
+                    url: 'https://github.com/bhavyabandlam/bhavya_bhavya.git',
                     credentialsId: 'aws-credentials'
             }
         }
@@ -37,3 +37,4 @@ pipeline {
         }
     }
 }
+
